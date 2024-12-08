@@ -22,7 +22,7 @@ public class App {
 
                 if (!scanner.hasNextInt()) {
                     System.out.println("Помилка: Введіть число від 0 до 4.");
-                    scanner.next(); // Пропустити некоректний ввід
+                    scanner.next(); 
                     continue;
                 }
 
@@ -41,7 +41,7 @@ public class App {
                 }
             } catch (Exception e) {
                 System.out.println("Сталася помилка: " + e.getMessage());
-                scanner.nextLine(); // Очистити буфер
+                scanner.nextLine(); 
             }
         }
         scanner.close();
