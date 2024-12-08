@@ -1,19 +1,13 @@
-package com.example;
+package main.java.com.example;
 
-import com.example.model.Product;
-import com.example.service.CsvReader;
-import com.example.service.CsvProcessor;
-import com.example.service.CsvWriter;
+import main.java.com.example.model.Product;
+import main.java.com.example.service.CsvReader;
+import main.java.com.example.service.CsvProcessor;
+import main.java.com.example.service.CsvWriter;
 
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-    }
-}
-
 
 public class Main {
     public static void main(String[] args) throws IOException {
