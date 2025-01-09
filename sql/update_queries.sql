@@ -1,19 +1,19 @@
--- Изменить цену на определенный вид кофе
+-- Изменить расписание работы на ближайший вторник
+UPDATE Schedule
+SET Shift = 'Evening'
+WHERE WorkDate = TO_DATE('2025-01-14', 'YYYY-MM-DD');
+
+-- Изменить название уже существующего вида кофе
 UPDATE Drinks
-SET Price = 4.00
-WHERE Name_EN = 'Latte';
+SET Name_EN = 'Americano', Name_OTHER = 'Американо'
+WHERE DrinkID = 1;
 
--- Изменить контактный, почтовый адрес кондитеру
-UPDATE Staff
-SET ContactEmail = 'newemail@example.com'
-WHERE Position = 'Кондитер' AND FullName = 'Jane Smith';
+-- Изменить информацию в существующем заказе
+UPDATE Orders
+SET TotalPrice = 5.00
+WHERE OrderID = 2;
 
--- Изменить контактный телефон бариста
-UPDATE Staff
-SET ContactPhone = '111-222-3333'
-WHERE Position = 'Бариста' AND FullName = 'John Doe';
-
--- Изменить процент скидки конкретного клиента
-UPDATE Clients
-SET Discount = 15
-WHERE FullName = 'Alice Brown';
+-- Изменить название уже существующего десерта
+UPDATE Desserts
+SET Name_EN = 'Brownie', Name_OTHER = 'Брауні'
+WHERE DessertID = 1;
